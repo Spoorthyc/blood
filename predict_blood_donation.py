@@ -11,7 +11,11 @@
 
 
 # Print out the first 5 lines from the transfusion.data file
-get_ipython().system('head -n 5 datasets/transfusion.data')
+# Use pandas to read and show first 5 rows
+import pandas as pd
+
+df = pd.read_csv("datasets/transfusion.data")
+print(df.head())
 
 
 # In[54]:
